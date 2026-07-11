@@ -1,0 +1,521 @@
+{
+  "header": {
+    "Machine": 332,
+    "NumberOfSections": 13,
+    "TimeDateStamp": 1774459787,
+    "Characteristics": 263,
+    "Magic": 267,
+    "AddressOfEntryPoint": 4832,
+    "ImageBase": 4194304,
+    "SectionAlignment": 4096,
+    "FileAlignment": 512,
+    "SizeOfImage": 77824,
+    "SizeOfHeaders": 1024,
+    "CheckSum": 95256,
+    "Subsystem": 3,
+    "DllCharacteristics": 0,
+    "SizeOfStackReserve": 2097152,
+    "SizeOfStackCommit": 4096,
+    "SizeOfHeapReserve": 1048576,
+    "SizeOfHeapCommit": 4096
+  },
+  "security_flags": {
+    "ASLR": false,
+    "DEP": false,
+    "CFG": false,
+    "HighEntropyVA": false,
+    "IsDLL": false,
+    "IsExecutable": true
+  },
+  "timestamp_plausibility": "Future",
+  "sections": [
+    {
+      "Name": ".text",
+      "VirtualAddress": 4096,
+      "VirtualSize": 11204,
+      "SizeOfRawData": 11264,
+      "PointerToRawData": 1024,
+      "Characteristics": 1615855712,
+      "Entropy": 6.175104724083086,
+      "IsExecutable": true,
+      "IsWritable": false,
+      "IsReadable": true,
+      "IsRWX": false
+    },
+    {
+      "Name": ".data",
+      "VirtualAddress": 16384,
+      "VirtualSize": 28,
+      "SizeOfRawData": 512,
+      "PointerToRawData": 12288,
+      "Characteristics": 3224371264,
+      "Entropy": 0.22238947047324953,
+      "IsExecutable": false,
+      "IsWritable": true,
+      "IsReadable": true,
+      "IsRWX": false
+    },
+    {
+      "Name": ".rdata",
+      "VirtualAddress": 20480,
+      "VirtualSize": 944,
+      "SizeOfRawData": 1024,
+      "PointerToRawData": 12800,
+      "Characteristics": 1076887616,
+      "Entropy": 4.388406907133137,
+      "IsExecutable": false,
+      "IsWritable": false,
+      "IsReadable": true,
+      "IsRWX": false
+    },
+    {
+      "Name": "/4",
+      "VirtualAddress": 24576,
+      "VirtualSize": 2480,
+      "SizeOfRawData": 2560,
+      "PointerToRawData": 13824,
+      "Characteristics": 1076887616,
+      "Entropy": 4.748736252339161,
+      "IsExecutable": false,
+      "IsWritable": false,
+      "IsReadable": true,
+      "IsRWX": false
+    },
+    {
+      "Name": ".bss",
+      "VirtualAddress": 28672,
+      "VirtualSize": 112,
+      "SizeOfRawData": 0,
+      "PointerToRawData": 0,
+      "Characteristics": 3224371328,
+      "Entropy": 0.0,
+      "IsExecutable": false,
+      "IsWritable": true,
+      "IsReadable": true,
+      "IsRWX": false
+    },
+    {
+      "Name": ".idata",
+      "VirtualAddress": 32768,
+      "VirtualSize": 1512,
+      "SizeOfRawData": 1536,
+      "PointerToRawData": 16384,
+      "Characteristics": 3224371264,
+      "Entropy": 4.661822678226983,
+      "IsExecutable": false,
+      "IsWritable": true,
+      "IsReadable": true,
+      "IsRWX": false
+    },
+    {
+      "Name": ".CRT",
+      "VirtualAddress": 36864,
+      "VirtualSize": 24,
+      "SizeOfRawData": 512,
+      "PointerToRawData": 17920,
+      "Characteristics": 3224371264,
+      "Entropy": 0.09409792566270775,
+      "IsExecutable": false,
+      "IsWritable": true,
+      "IsReadable": true,
+      "IsRWX": false
+    },
+    {
+      "Name": ".tls",
+      "VirtualAddress": 40960,
+      "VirtualSize": 32,
+      "SizeOfRawData": 512,
+      "PointerToRawData": 18432,
+      "Characteristics": 3224371264,
+      "Entropy": 0.22482003450968063,
+      "IsExecutable": false,
+      "IsWritable": true,
+      "IsReadable": true,
+      "IsRWX": false
+    },
+    {
+      "Name": "/14",
+      "VirtualAddress": 45056,
+      "VirtualSize": 88,
+      "SizeOfRawData": 512,
+      "PointerToRawData": 18944,
+      "Characteristics": 1111490624,
+      "Entropy": 0.39679068509210697,
+      "IsExecutable": false,
+      "IsWritable": false,
+      "IsReadable": true,
+      "IsRWX": false
+    },
+    {
+      "Name": "/29",
+      "VirtualAddress": 49152,
+      "VirtualSize": 13556,
+      "SizeOfRawData": 13824,
+      "PointerToRawData": 19456,
+      "Characteristics": 1108344896,
+      "Entropy": 5.820649491245947,
+      "IsExecutable": false,
+      "IsWritable": false,
+      "IsReadable": true,
+      "IsRWX": false
+    },
+    {
+      "Name": "/41",
+      "VirtualAddress": 65536,
+      "VirtualSize": 487,
+      "SizeOfRawData": 512,
+      "PointerToRawData": 33280,
+      "Characteristics": 1108344896,
+      "Entropy": 4.198087211585069,
+      "IsExecutable": false,
+      "IsWritable": false,
+      "IsReadable": true,
+      "IsRWX": false
+    },
+    {
+      "Name": "/55",
+      "VirtualAddress": 69632,
+      "VirtualSize": 670,
+      "SizeOfRawData": 1024,
+      "PointerToRawData": 33792,
+      "Characteristics": 1108344896,
+      "Entropy": 3.712265269212454,
+      "IsExecutable": false,
+      "IsWritable": false,
+      "IsReadable": true,
+      "IsRWX": false
+    },
+    {
+      "Name": "/67",
+      "VirtualAddress": 73728,
+      "VirtualSize": 56,
+      "SizeOfRawData": 512,
+      "PointerToRawData": 34816,
+      "Characteristics": 1110442048,
+      "Entropy": 0.6745765448489235,
+      "IsExecutable": false,
+      "IsWritable": false,
+      "IsReadable": true,
+      "IsRWX": false
+    }
+  ],
+  "section_stats": {
+    "count": 13,
+    "entropy_max": 6.175104724083086,
+    "entropy_avg": 2.7167497841855774,
+    "has_rwx": false,
+    "has_writable_executable": false
+  },
+  "imports": {
+    "total_imports": 51,
+    "dll_count": 3,
+    "dlls": [
+      "user32.dll",
+      "msvcrt.dll",
+      "kernel32.dll"
+    ],
+    "risky_api_count": 4,
+    "import_list": [
+      {
+        "DLL": "kernel32.dll",
+        "Function": "DeleteCriticalSection",
+        "RVA": 4227392
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "EnterCriticalSection",
+        "RVA": 4227396
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "ExitProcess",
+        "RVA": 4227400
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "FindClose",
+        "RVA": 4227404
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "FindFirstFileA",
+        "RVA": 4227408
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "FindNextFileA",
+        "RVA": 4227412
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "FreeLibrary",
+        "RVA": 4227416
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "GetCommandLineA",
+        "RVA": 4227420
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "GetLastError",
+        "RVA": 4227424
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "GetModuleHandleA",
+        "RVA": 4227428
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "GetProcAddress",
+        "RVA": 4227432
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "InitializeCriticalSection",
+        "RVA": 4227436
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "LeaveCriticalSection",
+        "RVA": 4227440
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "LoadLibraryA",
+        "RVA": 4227444
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "SetUnhandledExceptionFilter",
+        "RVA": 4227448
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "TlsGetValue",
+        "RVA": 4227452
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "VirtualProtect",
+        "RVA": 4227456
+      },
+      {
+        "DLL": "kernel32.dll",
+        "Function": "VirtualQuery",
+        "RVA": 4227460
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "_strdup",
+        "RVA": 4227468
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "_stricoll",
+        "RVA": 4227472
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "__getmainargs",
+        "RVA": 4227480
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "__mb_cur_max",
+        "RVA": 4227484
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "__p__environ",
+        "RVA": 4227488
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "__p__fmode",
+        "RVA": 4227492
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "__set_app_type",
+        "RVA": 4227496
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "_cexit",
+        "RVA": 4227500
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "_errno",
+        "RVA": 4227504
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "_fpreset",
+        "RVA": 4227508
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "_fullpath",
+        "RVA": 4227512
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "_iob",
+        "RVA": 4227516
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "_isctype",
+        "RVA": 4227520
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "_onexit",
+        "RVA": 4227524
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "_pctype",
+        "RVA": 4227528
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "_setmode",
+        "RVA": 4227532
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "abort",
+        "RVA": 4227536
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "atexit",
+        "RVA": 4227540
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "calloc",
+        "RVA": 4227544
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "free",
+        "RVA": 4227548
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "fwrite",
+        "RVA": 4227552
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "malloc",
+        "RVA": 4227556
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "mbstowcs",
+        "RVA": 4227560
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "memcpy",
+        "RVA": 4227564
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "realloc",
+        "RVA": 4227568
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "setlocale",
+        "RVA": 4227572
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "signal",
+        "RVA": 4227576
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "strcoll",
+        "RVA": 4227580
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "strlen",
+        "RVA": 4227584
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "tolower",
+        "RVA": 4227588
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "vfprintf",
+        "RVA": 4227592
+      },
+      {
+        "DLL": "msvcrt.dll",
+        "Function": "wcstombs",
+        "RVA": 4227596
+      },
+      {
+        "DLL": "user32.dll",
+        "Function": "MessageBoxW",
+        "RVA": 4227604
+      }
+    ],
+    "has_risky_apis": true,
+    "imphash": "2651064e924a4a53070f720f0d365d23"
+  },
+  "exports": {
+    "export_count": 0,
+    "name_count": 0
+  },
+  "rich_header": {
+    "present": false,
+    "key": 0,
+    "entries": []
+  },
+  "resources": {
+    "has_version_info": false,
+    "has_icon": false,
+    "has_manifest": false,
+    "has_any": false,
+    "resource_count": 0,
+    "resource_types": []
+  },
+  "file_info": {
+    "file_size": 47701,
+    "header_size": 1024,
+    "raw_data_size": 34304,
+    "overlay_size": 12373,
+    "has_overlay": true,
+    "md5": "a2621898395328b76c33badb85c4dd00",
+    "sha1": "b9cb8041b8e48161407a87ae09abbc9769cc0a42",
+    "sha256": "03ab258d63eba9f623dc3fa303842665cea7e8c78f86569d0d1851a9e48bb51b"
+  },
+  "strings": {
+    "total_count": 1111,
+    "avg_length": 14.575157515751576,
+    "suspicious_patterns": [
+      ".org",
+      "LoadLibrary",
+      "GetProcAddress",
+      "tor"
+    ],
+    "has_suspicious": true
+  },
+  "entropy": {
+    "overall": 5.6470725507062545,
+    "is_high": false,
+    "is_low": false
+  }
+}
