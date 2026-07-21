@@ -268,6 +268,70 @@ def mutate(chromosome, mutation_rate=0.1):
                 chromosome.mutation[key] = not chromosome.mutation[key]
     return chromosome
 
+def debug_scorewithember(population, input_pe="implant.exe"):
+    """
+    Debug version of evaluate_population that prints raw scores.
+    Shows you exactly what scorewithember returns for each variant.
+    """
+    print("\n" + "="*60)
+    print("DEBUG: SCOREWITHEMBER RAW OUTPUT")
+    print("="*60)
+    
+    raw_scores = []
+    
+    for i, chrom in enumerate(population[:10]):  # First 10 chromosomes
+        output_file = f"debug_variant_{chrom.id}.exe"
+        chromosome_to_exe(chrom, input_pe, output_file)
+        
+        # Get raw score
+        try:
+            with open(output_file, "rb") as f:
+                rawbyte = f.read()
+            feature = extractor.feature_vector(rawbyte)
+            features = np.array(feature).reshape(1, -1)
+            confidence = model.predict(features)[0]
+            score = confidence
+            status = "SUCCESS"
+        except Exception as e:
+            score = 1.0
+            status = f"FAILED: {str(e)[:50]}"
+        
+        raw_scores.append({
+            'id': chrom.id,
+            'score': score,
+            'status': status,
+            'mutations': chrom.mutation.copy()
+        })
+        
+        print(f"\nVariant {chrom.id}:")
+        print(f"  Score: {score:.6f}")
+        print(f"  Status: {status}")
+        print(f"  Mutations:")
+        for key, value in chrom.mutation.items():
+            print(f"    {key}: {value}")
+    
+    # Summary
+    print("\n" + "="*60)
+    print("RAW SCORE SUMMARY")
+    print("="*60)
+    
+    scores = [s['score'] for s in raw_scores]
+    print(f"  Min Score:  {min(scores):.6f}")
+    print(f"  Max Score:  {max(scores):.6f}")
+    print(f"  Avg Score:  {sum(scores)/len(scores):.6f}")
+    print(f"  Unique Scores: {sorted(set(scores))}")
+    
+    # Check for binary behavior
+    unique_scores = sorted(set(scores))
+    if len(unique_scores) <= 3:
+        print(f"\n  ⚠️ WARNING: Only {len(unique_scores)} unique scores found!")
+        print(f"     This suggests a binary switch behavior.")
+        print(f"     Scores: {unique_scores}")
+    else:
+        print(f"\n  ✅ {len(unique_scores)} unique scores found - good spread.")
+    
+    return raw_scores
+
 def run_evolution(generations=5, population_size=20, use_selection=True):
     population = createpopulation(mutationtarget, population_size)
     
@@ -323,6 +387,23 @@ def run_evolution(generations=5, population_size=20, use_selection=True):
     
     return population, history
 
+# ============================================================
+# RUN DEBUG FIRST
+# ============================================================
+print("\n" + "="*60)
+print("RUNNING DEBUG SCOREWITHEMBER")
+print("="*60)
+
+test_population = createpopulation(mutationtarget, populationsize=10)
+debug_results = debug_scorewithember(test_population, input_pe="implant.exe")
+
+with open('debug_scores.json', 'w') as f:
+    json.dump(debug_results, f, indent=2)
+    print("\n✅ Raw scores saved to: debug_scores.json")
+
+# ============================================================
+# MAIN GA RUN
+# ============================================================
 print("\n" + "="*60)
 print("PHASE 7: EXPANDED MUTATION SPACE")
 print("="*60)
