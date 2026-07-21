@@ -1,10 +1,4 @@
-# Evasive-AI
-
-<p align="center">
-  <img src="https://github.com/FajrJauhar/Evasive-AI/blob/main/banner.png" height="500px">
-</p>
-
-# 🧬 Evasive AI
+# Evasive AI
 > Functionality-Preserving Black-Box Adversarial Malware Generation Framework
 >
 > Research framework for generating adversarial Portable Executable (PE) variants using Genetic Algorithms against machine-learning malware detectors.
@@ -15,7 +9,7 @@
 
 ## 🚀 Features
 
-### 🧬 Genetic Algorithm Engine
+### Genetic Algorithm Engine
 
 | Feature | Description |
 |---------|-------------|
@@ -26,7 +20,7 @@
 
 ---
 
-### 📂 PE Analysis Framework
+### PE Analysis Framework
 
 | Feature | Description |
 |---------|-------------|
@@ -37,7 +31,7 @@
 
 ---
 
-### 🎯 Adversarial Mutation Engine
+### Adversarial Mutation Engine
 
 | Feature | Description |
 |---------|-------------|
@@ -49,7 +43,7 @@
 
 ---
 
-### 🤖 ML Evaluation Pipeline
+### ML Evaluation Pipeline
 
 | Feature | Description |
 |---------|-------------|
@@ -60,7 +54,7 @@
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 ```
           [Input Malware PE]
